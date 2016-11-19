@@ -27,7 +27,7 @@ search_terms.each do |term|
 	CSV.open("life-data.csv", "a+") do |csv|
 		csv << [name, bday, dday]
 	end
-	delay_time = rand(11)
+	delay_time = rand(60)
 	sleep(delay_time)
 	puts name + " was just added to the CSV."
 end
